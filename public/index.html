@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="/rocket.png">
+    <title>Twitter Profile</title>
+</head>
+<body>
+    <div id="root">
+        <div id="main">
+            <div id="title">
+                <h1 id="text">Cool Looking Twitter Profile Picture in 10s</h1>
+                <h3 id="twitter">Built by <a href="https://twitter.com/viatanas"> @viatanas.</a></h3>
+            </div>
+            <div id="preset-container">
+                <div id="presets">
+                    <button class="button" id="buttonone"></button>
+                    <button class="button" id="buttontwo"></button>
+                    <button class="button" id="buttonthree"></button>
+                    <button class="button" id="buttonfour"></button>
+                    <button class="button" id="buttonfive"></button>
+                    <button class="button" id="buttonsix"></button>
+                </div>
+            </div>
+            <div id="image-container">
+                <image src="" id="image"></image>
+            </div>
+            <div id="controls-container">
+                <div id="controls-container-inner">
+                    <label for="image-file" id="label" class="hover">Import Image</label>
+                    <input id="image-file" type="file" accept="image/*" />
+                    <button id="zoom-in" class="hover"><span id="plus"> + </span></button>
+                    <button id="zoom-out" class="hover"><span id="minus"> - </span></button>
+                    <button class="hover" id="remove-bg"><span id="remove-bg-text"> Remove BG </span></button>
+                </div>
+            </div>
+            <div id="export-container">
+                <button id="export" class="hover"><span id="export-button-text"> Export Image </span></button>   
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+</body>
+</html>
